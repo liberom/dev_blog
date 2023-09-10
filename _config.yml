@@ -2,7 +2,7 @@
 title               : Developer's Corner
 owner               : "Liberom"
 url                : "http://0.0.0.0:4000" # "https://liberom.github.io"
-baseurl            : ""
+baseurl            : "/dev_blog"
 permalink           : /:title/
 description         : "A hacker-style note-keeping website template."
 markdown            : kramdown
