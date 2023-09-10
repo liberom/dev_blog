@@ -1,8 +1,8 @@
 # 1. Site Settings
-title               : pRoJEct-VeXEd
-owner               : "DeerRIDER"
-url                : "https://akiritsu.github.io"
-baseurl            : "/pRoJEct-VeXEd"
+title               : Developer's Corner
+owner               : "Liberom"
+url                : "http://0.0.0.0:4000" # "https://liberom.github.io"
+baseurl            : ""
 permalink           : /:title/
 description         : "A hacker-style note-keeping website template."
 markdown            : kramdown
@@ -10,22 +10,25 @@ statement           : "Designed by DeerRIDER, All Rights Reserved"
 bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
 
 # 2. Your Collections
-# You can specify the order shown in Archive window. 
+# You can specify the order shown in Archive window.
 # Keep it null if you want to show items in alphabetic order.
-collection_order    : 
+collection_order    :
   [
-    "posts",
-    "math",
-    "album",
-    "physics",
-    "biology",
+    "ruby_and_rails",
+    "javascript",
+    "python",
+    "shell",
+    "web3",
+    "ai_ml",
+    "databases",
+    "devops",
     "finance",
-    "physics",
+    "posts",
     "my_notes",
     "portfolio",
   ]
 collections:
-  math:   
+  math:
     output          : true
     permalink       : /:collection/:title/
     sort_by         : date
@@ -53,22 +56,22 @@ collections:
   my_notes:
     output          : true
     permalink       : /:collection/:title/
-    # An alias should be given or the UNDERSCORE will appeared 
+    # An alias should be given or the UNDERSCORE will appeared
     alias           : "My Notes"
   posts:
     output          : true
 
 # 3. Comment settings（disqus.com）
-disqus_username     : akiritsu
+disqus_username     : liberom
 
 # 4. Default page settings (WILL BE overwriten by front-matters of a page)
 defaults:
-  -    
+  -
     scope:
       path          : ""  # an empty string here means all files in the project
     values:
       layout              : "post"      # which layout to use by default
-      publish             : true        # whether to show by default      
+      publish             : true        # whether to show by default
       btn_text            : true        # whether show button text by default
       collection_list     : true        # whether show archive button by default
       home_btn            : true        # whether show home by default
@@ -76,26 +79,26 @@ defaults:
       encrypted_text      : false       # whether use encrytion function by default
       toc                 : true        # whether show table of content by default
       toc_level           : 3           # the toc depth by default
-      author              : "DeerRIDER" # author name by default
+      author              : "Liberom" # author name by default
       show_date           : true        # whether show date message by default
       category            :             # category by default
-      post_list           : false       # whether show list of post by default      
+      post_list           : false       # whether show list of post by default
       comment             : true
       footer              : true        # whether show footer by default
 
 # 5. Social Media Accounts
-email               : "https://github.com/akiritsu/pRoJEct-VeXEd" 
-linkedin            : 
-github              : "just-test" 
-gitlab              : 
-website             : "https://github.com/akiritsu/pRoJEct-VeXEd"
-twitter             : "just-test"
-facebook            : "just-test"
-instagram           : 
-youtube             : "just-test"
-steam               : "just-test"
+email               : "liberom@email.com"
+linkedin            :
+github              : "liberom"
+gitlab              :
+website             : "https://liberom.github.io/blog"
+twitter             : "viniciuslibero"
+facebook            :
+instagram           :
+youtube             :
+steam               :
 weibo               :
-      
+
 # 6. Where things are
 source              : .
 destination         : ./_site
@@ -112,7 +115,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+
 gems: [jekyll-mermaid]
 
 # 8. Others
